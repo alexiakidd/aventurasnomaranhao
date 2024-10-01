@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Event</name>
+    <events>
+        <event-group description="" sid="341351925654812" title="BotoesMenu">
+            <sub-events>
+                <comment>Jogar Button</comment>
+                <event-block sid="282034842109159">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="978603437850767" type="Mouse">
+                            <param id="0" name="Object">jogar_b</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="534663482259526" type="jogar_b">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="729142091794460">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="722662836657202" type="Mouse">
+                            <param id="0" name="Object">jogar_b</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="153187045256485" type="jogar_b">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478772489637204">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="104735982683815" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">jogar_b</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="132599144517525" type="jogar_b">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="836347060785569" type="System">
+                            <param id="0" name="Layout">Cena0</param>
+                        </action>
+                        <action id="0" name="Play" sid="637349625790549" type="Audio">
+                            <param id="0" name="Audio file">cena0- lily</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">100</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Sobre Button</comment>
+                <event-block sid="206743993039126">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="706133496164082" type="Mouse">
+                            <param id="0" name="Object">sobre_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="518848304910252" type="sobre_button">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="617223941023072">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="966859924331061" type="Mouse">
+                            <param id="0" name="Object">sobre_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="849668156820559" type="sobre_button">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="140997370512821">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="412947520605086" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">sobre_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="620008250197415" type="sobre_button">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="180719453669409" type="System">
+                            <param id="0" name="Layout">Sobre</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Creditos Button</comment>
+                <event-block sid="337284288064360">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="446365438454332" type="Mouse">
+                            <param id="0" name="Object">creditos_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="796369654094826" type="creditos_button">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="246963821335409">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="261320335005284" type="Mouse">
+                            <param id="0" name="Object">creditos_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="565569166282031" type="creditos_button">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="872549202024503">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="704475632958268" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">creditos_button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="964697370389540" type="creditos_button">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="578653518311009" type="System">
+                            <param id="0" name="Layout">Creditos</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="372315602601904" title="PaginasSubmenu">
+            <sub-events>
+                <comment>Pagina Sobre</comment>
+                <event-block sid="449683475689769">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="933409770230441" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btn_voltar_sobre</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="549365861333342" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Pagina Creditos</comment>
+                <event-block sid="790304407771052">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="751123762202264" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btn_voltar_creditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="537223047934374" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

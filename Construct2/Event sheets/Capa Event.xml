@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Capa Event</name>
+    <events>
+        <variable constant="0" name="theme_music" sid="987072097314998" static="0" type="number">1</variable>
+        <event-block sid="163816768188085">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="608821078354134" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="746181558431523" type="Audio">
+                    <param id="0" name="Audio file">Sao Luis Dream</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;themesong&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="448024740698259" type="System">
+                    <param id="0" name="Variable">theme_music</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="379603288440821">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="533458573651913" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="770112130041392" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="907100920226423" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
