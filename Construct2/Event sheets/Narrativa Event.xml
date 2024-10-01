@@ -3,14 +3,21 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Narrativa Event</name>
     <events>
+        <variable constant="0" name="numDialogo" sid="985368568673796" static="0" type="number">0</variable>
         <comment>Narrativa</comment>
-        <variable constant="0" name="StoryTextIndex" sid="162442800811726" static="0" type="number">0</variable>
-        <variable constant="0" name="StoryTextIndex1" sid="209867183919864" static="0" type="number">0</variable>
-        <variable constant="0" name="Story0TextIndexFull" sid="270428596185740" static="0" type="text">&quot;São Luís do Maranhão, uma cidade cheia de história e cultura. Mas agora, uma força misteriosa ameaça apagar tudo...&quot;</variable>
-        <variable constant="0" name="Story1TextIndexFull" sid="861232304114677" static="0" type="text">&quot;Esses casarões... Parece que estão perdendo sua essência. Algo está errado.&quot;</variable>
+        <variable constant="0" name="TextoIndexNarrador" sid="162442800811726" static="0" type="number">0</variable>
+        <variable constant="0" name="TextoIndexLuiz" sid="209867183919864" static="0" type="number">0</variable>
+        <variable constant="0" name="TextoIndexLuiz2" sid="196661413538596" static="0" type="number">0</variable>
+        <variable constant="0" name="TextoIndexLuiz3" sid="674815228926932" static="0" type="number">0</variable>
+        <variable constant="0" name="TextoNarrado1" sid="270428596185740" static="0" type="text">&quot;São Luís do Maranhão, uma cidade cheia de história e cultura. Mas agora, uma força misteriosa ameaça apagar tudo...&quot;</variable>
+        <variable constant="0" name="TextoLuiz1" sid="861232304114677" static="0" type="text">Sempre amei caminhar por aqui... Cada casarão conta uma história. Mas ultimamente, algo mudou. É como se as memórias estivessem desaparecendo... e eu não sei por quê.</variable>
+        <variable constant="0" name="TextoLuiz2" sid="235312309903689" static="0" type="text">Percebo que a cidade está diferente, mais apagada. Será se isso é aquela coisa chamada Esquecimento? A força misteriosa que apaga o passado das pessoas e dos lugares, trazendo a negligência que ameaça nosso patrimônio? Não posso deixar isso acontecer aqui...</variable>
+        <variable constant="0" name="TextoNarrado2" sid="607037075133226" static="0" type="text">Pelo visto o Esquecimento está agindo nas sombras, silenciosamente apagando as histórias e a essência de São Luís. Luís se preocupa e vê que ele precisa descobrir uma maneira de impedir.</variable>
+        <variable constant="0" name="TextoLuiz3" sid="740304083838255" static="0" type="text">Essas moedas... Eu me lembro de ouvir que elas guardam memórias, fragmentos de histórias que não devem ser esquecidas. Se eu puder recolhê-las, talvez consiga salvar a cidade antes que o Esquecimento apague tudo.</variable>
+        <variable comment="1=true / 0=false" constant="0" name="FimNarrativa" sid="315776160254475" static="0" type="number">0</variable>
         <event-group description="" sid="664384784157492" title="Narrativa2">
             <sub-events>
-                <comment>Story0</comment>
+                <comment>Cena 0</comment>
                 <event-block sid="814002442307223">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="168580170295941" type="System">
@@ -18,13 +25,18 @@
                         </condition>
                         <condition id="-9" name="Is visible" sid="587038049596606" type="texto_cena0" />
                         <condition id="-9" name="Is visible" sid="597061401841199" type="bg_cena0" />
+                        <condition id="-14" name="Compare variable" sid="777691978595364" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="183724523411584" type="texto_cena0">
-                            <param id="0" name="Text">(Mid(Story0TextIndexFull,0,StoryTextIndex))</param>
+                            <param id="0" name="Text">(Mid(TextoNarrado1,0,TextoIndexNarrador))</param>
                         </action>
                         <action id="-10" name="Add to" sid="294485493245746" type="System">
-                            <param id="0" name="Variable">StoryTextIndex</param>
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -32,35 +44,64 @@
                 <event-block sid="652947917363233">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="835578710782663" type="System">
-                            <param id="0" name="Variable">StoryTextIndex</param>
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Len(Story0TextIndexFull)</param>
+                            <param id="2" name="Value">Len(TextoNarrado1)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="504081517969795" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="275056340983110" type="texto_cena0" />
                         <action id="-16" name="Wait" sid="435100793890372" type="System">
-                            <param id="0" name="Seconds">3</param>
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="275056340983110" type="texto_cena0" />
+                        <action id="-9" name="Set value" sid="465193034614744" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="696954858150725" type="System">
                             <param id="0" name="Layout">Cena1</param>
                         </action>
+                        <action id="-10" name="Set value" sid="570685241689181" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="115173517038722" type="System">
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="851473566026070" type="texto_cena0">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
-                <comment>Story1</comment>
+                <comment>Cena 1</comment>
                 <event-block sid="821370449709302">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="710073383122905" type="System">
                             <param id="0" name="Interval (seconds)">0.05</param>
                         </condition>
-                        <condition id="-9" name="Is visible" sid="287935751955066" type="texto_cena1" />
+                        <condition id="-7" name="Compare instance variable" sid="643246195537275" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="130773238103399" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="824838200799590" type="texto_cena1">
-                            <param id="0" name="Text">(Mid(Story1TextIndexFull,0,StoryTextIndex1))</param>
+                            <param id="0" name="Text">(Mid(TextoLuiz1,0,TextoIndexLuiz))</param>
                         </action>
                         <action id="-10" name="Add to" sid="974646943803477" type="System">
-                            <param id="0" name="Variable">StoryTextIndex1</param>
+                            <param id="0" name="Variable">TextoIndexLuiz</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -68,22 +109,222 @@
                 <event-block sid="988678537565564">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="326275840674195" type="System">
-                            <param id="0" name="Variable">StoryTextIndex1</param>
+                            <param id="0" name="Variable">TextoIndexLuiz</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Len(Story1TextIndexFull)</param>
+                            <param id="2" name="Value">Len(TextoLuiz1)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="266406390402507" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="280144536314885" type="texto_cena1" />
-                        <action id="-16" name="Wait" sid="775315672778661" type="System">
-                            <param id="0" name="Seconds">3</param>
+                        <action id="-16" name="Wait" sid="635414408244975" type="System">
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="519250866257624" type="System">
+                        <action id="-9" name="Set value" sid="742712168958496" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="375241576694793" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="792393803937638" type="texto_cena1">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="990300853441464">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="413259398892798" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="153393013403965" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="448239411402687" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="242004613909745" type="texto_cena1">
+                            <param id="0" name="Text">(Mid(TextoLuiz2,0,TextoIndexLuiz2))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="740386923506117" type="System">
+                            <param id="0" name="Variable">TextoIndexLuiz2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="945074547388343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="102629485408338" type="System">
+                            <param id="0" name="Variable">TextoIndexLuiz2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Len(TextoLuiz2)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="598758553470417" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="474240996967439" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="440617319846047" type="texto_cena1" />
+                        <action id="-9" name="Set value" sid="196026726504006" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="398081057895169" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="778683138045721" type="texto_cena1">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="240781912046858" type="System">
                             <param id="0" name="Layout">Cena2</param>
                         </action>
                     </actions>
                 </event-block>
-                <comment>Story2</comment>
+                <comment>Cena 2</comment>
+                <event-block sid="196212186111140">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="350589185178639" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="769811708930234" type="texto_cena0" />
+                        <condition id="-14" name="Compare variable" sid="270782581885789" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="720265358809927" type="texto_cena0">
+                            <param id="0" name="Text">(Mid(TextoNarrado2,0,TextoIndexNarrador))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="776176180605808" type="System">
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="531405553548823">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="606296355223501" type="System">
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Len(TextoNarrado1)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="306793237844048" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="884367087125859" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="808545187067492" type="texto_cena0" />
+                        <action id="-9" name="Set value" sid="364929079261399" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="747093154730653" type="System">
+                            <param id="0" name="Layout">Cena1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="721970473324464" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="424293538366755" type="System">
+                            <param id="0" name="Variable">TextoIndexNarrador</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="196312318086128" type="texto_cena0">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Cena 3</comment>
+                <event-block sid="359443691091087">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="283385705113049" type="texto_cena1" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="331147264208404" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="736020252006576">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="926590294917741" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="926862879443825" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="435569768788593" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="456753878783204" type="texto_cena1">
+                            <param id="0" name="Text">(Mid(TextoLuiz3,0,TextoIndexLuiz3))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="827867434018556" type="System">
+                            <param id="0" name="Variable">TextoIndexLuiz3</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="774901745582422">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="670336132970009" type="System">
+                            <param id="0" name="Variable">TextoIndexLuiz3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Len(TextoLuiz3)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="601824074990354" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="322573165534781" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="858612488117512" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="987429986749238" type="texto_cena1">
+                            <param id="0" name="Instance variable">textoLuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="768074660377786" type="texto_cena1">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="362166499160189">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="150018546725705" type="Mouse">
@@ -100,13 +341,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="235086827457521">
-            <conditions />
-            <actions />
-        </event-block>
-        <event-block sid="300393846339582">
-            <conditions />
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

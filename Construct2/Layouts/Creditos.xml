@@ -2,7 +2,7 @@
 <c2layout>
     <name>Creditos</name>
     <sid>121418844860152</sid>
-    <event-sheet>Event sheet</event-sheet>
+    <event-sheet>Creditos e Sobre Event</event-sheet>
     <size>
         <width>1550</width>
         <height>800</height>
@@ -49,24 +49,39 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_voltar_creditos" uid="139">
+                <instance type="btn_voltar" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>25</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>127</x>
-                        <y>695</y>
+                        <x>143</x>
+                        <y>654</y>
                         <z>0</z>
-                        <width>161.584259033</width>
-                        <height>92.682296753</height>
+                        <width>197.569381714</width>
+                        <height>113.377883911</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.501650155</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -10,21 +10,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="15">Capa</layout>
-        <layout order="1">Menu</layout>
-        <layout order="3">Cena0</layout>
-        <layout order="4">Cena1</layout>
-        <layout order="5">Cena2</layout>
-        <layout order="7">cenario opaco</layout>
-        <layout order="8">centro historico</layout>
-        <layout order="9">cenario lito</layout>
+        <layout order="0">Capa</layout>
+        <layout order="2">Menu</layout>
+        <layout order="4">Cena0</layout>
+        <layout order="5">Cena1</layout>
+        <layout order="6">Cena2</layout>
+        <layout order="7">Cena3</layout>
+        <layout order="8">cenario opaco</layout>
+        <layout order="9">centro historico</layout>
         <layout order="10">cenario opaco2</layout>
-        <layout order="12">Sobre</layout>
         <layout order="13">Creditos</layout>
+        <layout order="14">Sobre</layout>
+        <layout order="15">cenario lito</layout>
+        <event-sheet order="1">Capa Event</event-sheet>
+        <event-sheet order="3">Menu Event</event-sheet>
         <event-sheet order="11">Event sheet</event-sheet>
-        <event-sheet order="2">Menu Event</event-sheet>
-        <event-sheet order="0">Capa Event</event-sheet>
-        <event-sheet order="6">Narrativa Event</event-sheet>
+        <event-sheet active="1" order="12">Narrativa Event</event-sheet>
+        <event-sheet order="16">Creditos e Sobre Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -68,8 +70,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite17/" />
         <folder expanded="1" path="animation-folder/Sprite18/" />
         <folder expanded="1" path="animation-folder/seta_seguinte/" />
-        <folder expanded="1" path="animation-folder/btn_voltar_sobre/" />
-        <folder expanded="1" path="animation-folder/btn_voltar_creditos/" />
+        <folder expanded="1" path="animation-folder/btn_voltar/" />
         <folder expanded="1" path="animation-folder/creditos_button/" />
         <folder expanded="1" path="animation-folder/sairpromenu/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />

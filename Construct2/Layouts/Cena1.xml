@@ -80,6 +80,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <textoLuiz>0</textoLuiz>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Fade">
                             <properties>
@@ -98,7 +101,7 @@
                         <y>143</y>
                         <z>0</z>
                         <width>984</width>
-                        <height>116</height>
+                        <height>230</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

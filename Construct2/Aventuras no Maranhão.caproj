@@ -66,7 +66,7 @@
         </object-type>
         <object-type name="casaroes" sid="620629662630180">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\centro cenario.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Centro\Ativo 14.png" />
         </object-type>
         <object-type name="calçada" sid="484987605962736">
             <plugin id="Sprite" />
@@ -387,36 +387,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="433831206923502" speed="0">
-                    <frame duration="1" hotspotX="0.501319" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogar.png">
-                        <collision-poly>
-                            <point x="0.0131579" y="0.0595238" />
-                            <point x="0.5" y="0.0238095" />
-                            <point x="0.986842" y="0.0595238" />
-                            <point x="0.986842" y="0.940476" />
-                            <point x="0.5" y="0.988095" />
-                            <point x="0.0105263" y="0.952381" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogarHover.png">
-                        <collision-poly>
-                            <point x="0.010582" y="0.0487805" />
-                            <point x="0.5" y="0" />
-                            <point x="0.989418" y="0.0487805" />
-                            <point x="0.989418" y="0.951219" />
-                            <point x="0.5" y="1" />
-                            <point x="0.010582" y="0.951219" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogarFocus.png">
-                        <collision-poly>
-                            <point x="0.00961538" y="0.0444444" />
-                            <point x="0.5" y="0" />
-                            <point x="0.990385" y="0.0444444" />
-                            <point x="0.990385" y="0.955556" />
-                            <point x="0.5" y="1" />
-                            <point x="0.00961538" y="0.955556" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.501319" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogar.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogarHover.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\Buttons\ButtonJogarFocus.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -678,6 +651,9 @@
         </object-type>
         <object-type name="texto_cena1" sid="263815297028320">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="textoLuiz" sid="132586917099055" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Fade" sid="328374447945135">
                     <behavior id="Fade" />
@@ -691,7 +667,7 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\menu sobre.png" />
         </object-type>
-        <object-type name="btn_voltar_sobre" sid="126340202646032">
+        <object-type name="btn_voltar" sid="126340202646032">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="113300852648594">
@@ -700,7 +676,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295738693305165" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\ArrowVoltar.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\ArrowVoltar.png">
                         <collision-poly>
                             <point x="0.320755" y="0.0164473" />
                             <point x="0.332075" y="0.233553" />
@@ -710,24 +686,6 @@
                             <point x="0.328302" y="0.746711" />
                             <point x="0.333962" y="0.986842" />
                             <point x="0.00188679" y="0.496711" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="btn_voltar_creditos" sid="724880563725216">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823930621852825" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\ArrowVoltar.png">
-                        <collision-poly>
-                            <point x="0.328302" y="0.00657894" />
-                            <point x="0.333962" y="0.236842" />
-                            <point x="1" y="0.246711" />
-                            <point x="0.998113" y="0.751645" />
-                            <point x="0.329245" y="0.755757" />
-                            <point x="0.324528" y="0.976974" />
-                            <point x="0" y="0.504934" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -807,7 +765,7 @@
         <object-type name="ContadorMagnetTexto" sid="705670998317329">
             <plugin id="Text" />
         </object-type>
-        <object-type name="MenuButtonTouch" sid="506278603247510">
+        <object-type name="Touch" sid="187092619334301">
             <plugin id="Touch" />
         </object-type>
     </object-folder>
@@ -820,6 +778,7 @@
         <layout>Cena0.xml</layout>
         <layout>Cena1.xml</layout>
         <layout>Cena2.xml</layout>
+        <layout>Cena3.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>centro historico.xml</layout>
         <layout>cenario opaco.xml</layout>
@@ -831,6 +790,7 @@
         <event-sheet>Menu Event.xml</event-sheet>
         <event-sheet>Capa Event.xml</event-sheet>
         <event-sheet>Narrativa Event.xml</event-sheet>
+        <event-sheet>Creditos e Sobre Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
@@ -849,7 +809,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="MenuButtonTouch" uid="45">
+        <global-instance type="Touch" uid="45">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>

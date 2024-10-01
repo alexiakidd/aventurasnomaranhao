@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Creditos e Sobre Event</name>
+    <events>
+        <event-group description="" sid="148833046056414" title="PaginasSubmenu">
+            <sub-events>
+                <comment>Pagina Sobre e Pagina Creditos</comment>
+                <event-block sid="547127828367245">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="570297299562840" type="Touch">
+                            <param id="0" name="Object">btn_voltar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="785856633407641" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="987096653026624" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

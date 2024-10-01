@@ -2,7 +2,7 @@
 <c2layout>
     <name>Sobre</name>
     <sid>862948775446112</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>Creditos e Sobre Event</event-sheet>
     <size>
         <width>1550</width>
         <height>800</height>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_voltar_sobre" uid="138">
+                <instance type="btn_voltar" uid="138">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -74,14 +74,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>149.21786499</x>
-                        <y>687.151977539</y>
+                        <x>143</x>
+                        <y>654</y>
                         <z>0</z>
-                        <width>198.317749023</width>
-                        <height>113.752067566</height>
+                        <width>197.569381714</width>
+                        <height>113.377883911</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.501650155</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
