@@ -1,0 +1,61 @@
+﻿CITIZEN LUIS: AVENTURAS NO MARANHÃO
+
+
+Alessandra Silva Lima[1]; Thayllon Marinho Barbosa[2]; Mauro Lopes Carvalho Silva[3]; Eveline de Jesus Viana Sá[4].
+
+
+Resumo
+A cidade de São Luís e o estado do Maranhão é repleto de cultura, história e belezas naturais. A capital São Luís é Patrimônio Cultural Mundial pela Unesco, em 1997, por sua tradição cultural rica e diversificada, além do excepcional exemplo da cidade colonial portuguesa, com traçado preservado e conjunto arquitetônico representativo (IPHAN,2014). Neste projeto propomos o desenvolvimento de um jogo baseado na cultura e história do Maranhão, com o objetivo final de disponibilizar ao público alvo de forma lúdica uma imersão a uma narrativa jogável. Como consequência pretende-se agregar valor ao espaço geográfico, a cultura, e a história, aos cidadãos tanto desse estado quanto de outros. Para tanto, foram pesquisadas formas para o desenvolvimento tecnológico do projeto, bem como realizada uma pesquisa histórica e documentação, que serviram de base para a construção de uma demo (demonstração).
+Palavras-chave:
+Jogos. São Luís.  Maranhão. Cultura.
+Introdução
+Segundo JUNIOR et al (2002), o processo de desenvolvimento de jogos costuma ser bastante caótico e complicado. Os diversos aspectos inerentes ao desenvolvimento, como os requisitos a se satisfazer e as tecnologias disponíveis faz com que a adoção de processos rígidos e bem definidos seja bastante dificultada. O projeto busca apresentar um jogo formado por aspectos da cultura de São Luís do Maranhão sendo ambientado em lugares importantes e conhecidos da cidade para reforçar e valorizar o grande potencial cultural desta cidade patrimônio nacional. DA SILVEIRA (2016) fala a respeito dos jogos como ferramenta cultural, “Nota-se preocupação das equipes de desenvolvimento de todos em buscar validação acerca da cultura referenciada por meio de discussões, insights, interações e vivência com membros da cultura em questão. Dessa forma reforça-se a importância da pesquisa quando se busca fazer algo que agregue valor cultural para a sociedade maranhense, conhecendo assim a história e cultura do Maranhão.
+Metodologia 
+Este projeto foi dividido em duas etapas. Modelagem do Jogo onde tivemos a etapa prototipação e desenvolvimento a partir do GDD (Game Design Document) do jogo e feedback do protótipo anterior. Um dos pontos que foi visto a necessidade de uma segunda prototipação, foi através da MOSTRA DE JOGOS da Fábrica de Jogos no Universo IFMA 2019, onde havia a necessidade de refazer o concept art do jogo e a segunda etapa foi a organização da história do jogo para uma forma mais fluida criando-se um Storytelling.
+
+
+Resultados e Discussão
+O jogo começa com Luís, um cidadão ludovicense dando informações para um turista quando, de repente, ele avista uma pessoa depredando os azulejos de um dos prédios coloniais da cidade. E então começa a perseguição de Luís atrás desse indivíduo pelas ruas de São Luís. Enquanto corre, Luís precisa se desviar dos carros e de outros obstáculos e inimigos que irão aparecer por meio de plataformas, além de moedas que o esta pessoa misteriosa vai deixando para trás, pois o mesmo estava justamente tentando esconder em um casarão abandonado uma bolsa cheia de objetos mágicos e de grande riqueza que farão interação com o jogador no decorrer do fluxo de jogabilidade.
+O projeto "Citizen Luís: Aventuras no Maranhão" surgiu a partir do projeto "Corra Luís, Corra!" consolidando esse projeto de jogo como sendo um jogo de plataforma. A ideia inicial do jogo permaneceu de forma que somente acréscimos foram feitos, sendo estes: a criação do Storytelling e a criação de artes originais para o jogo com mais fidelidade aos ambientes de São Luís onde os dois níveis do jogo se passam, que são: o Centro Histórico e Avenida Litorânea. As Figuras 1, 2 e 3 ilustram um recorte da artes desenvolvidas.
+As artes do jogo foram feitas em sua totalidade com o apoio de recursos digitais, como a ferramenta Google Maps e Adobe Illustrator. Para desenvolvimento foi utilizado o Construct 2. Devido, também, ao período de isolamento enfrentado no ano de 2020 não foi possível a observação dos ambientes presencialmente, porém esses fatores não influenciaram diretamente na produção das artes.
+A seguir, nas figuras 4 e 5, são ilustrados uma das telas do jogo e elementos do mesmo.
+Figura 1: Cruzamento da Rua Portugal e Rua da Estrela, Centro Histórico   
+Figura 2: Rua Portugal e Beco Catarina Mina, Centro Histórico        
+Figura 3: Praça do pescador, Avenida Litorânea
+  
+  
+
+Figura 4: Tela do jogo - Rua Portugal, Centro Histórico Figura   
+5: Frames do Luís usados na animação do personagem.  
+
+
+        Dessa forma foi possível alcançar o objetivo de criar um programa lúdico e divertido que agregasse o processo de conhecimento cultural de São Luís do Maranhão.
+        O Storytelling elaborado para o jogo, é apresentado a seguir: 
+1. Apresentação do Herói: Luís é um garoto de 13 anos muito curioso da cidade de São Luís. Assim como muitos garotos de sua idade vão para escola, Luis também tem essa atividade no seu dia-a-dia, indo e voltando, sempre da escola pra casa e da casa pra escola.
+2. Chamado para o desafio: Seu dia era sempre o habitual até que, em uma das voltas para casa da escola, Luís observa uma pessoa depredando um prédio histórico e após os dois cruzarem seus olhares, Luís prontamente vai atrás da pessoa misteriosa em sua jornada de saber porque aquela pessoa estaria fazendo aquilo e alertá-lo dos deveres de cidadão.
+3. Recusa ao Chamado: Luís, apesar de perceber o vandalismo, não conseguia alcançar o homem misterioso, pois era bem rápido, e isso o deixou para trás na busca.
+4. Descoberta de Recursos: Então Luís percebeu que no meio do caminho onde o homem passava, deixava cair alguns itens de valor, como itens mágicos que o ajudariam a correr mais rápido para alcançar o tal homem, além de outros recursos.
+5. Aceite ao chamado: Agora mais confiante, Luís continua em sua busca para alcançar o homem, a fim de entender o que se passava para o mesmo estar praticando tal ato.
+6. O herói é testado: Quanto mais Luis corria pelas ruas de São Luís, mais obstáculos surgiam e cada vez que ele esbarrava em um, mais distante ele ficava do homem. Caso não conseguisse alcança-lo, perderia o homem de vista e nunca iria saber o motivo daquilo ter acontecido. Sabendo do seu desafio, Luís conta com ajuda de alguns personagens (que nos remete a conhecer a cultura da cidade através de personagens históricos)  para alcançar seu objetivo, então apesar de suas dificuldades em alcançar o homem, os personagens o ajudam para o tão esperado confronto.
+7. A batalha Final: Após Luís finalmente conseguir alcançar o homem misterioso. Ele descobre que o homem nada mais era que um viajante no tempo, e que os personagens que lhe ajudaram a alcançá-lo eram personagens de vários momentos da história de São Luís. O homem estava roubando as gems ("jóia", do inglês) históricas da cidade e neste momento o homem tenta fugir porém é impedido por Luís, que pega a bolsa e leva todos as gems de volta para os museus da cidade. De acordo com o GDD, o final do jogo acontecerá na praça Deodoro onde os personagens secundários serão as personagens históricas como foi descrito.
+
+
+Conclusão
+A pesquisa bibliográfica para tomada de decisões que aproximaram o projeto da linha de desenvolvimento de uma ferramenta que agrega, culturalmente falando, foi de máxima importância uma vez que os elementos pensados para o jogo fazem parte de uma cultura muito vívida que é a cultura de São Luís. Dessa forma também foi feita a ambientação do jogo e os cenários foram feitos com muitas pesquisas. 
+Como resultado o jogo foi feito representando de forma mais aproximada possível, dentro dos limites das ferramentas utilizadas e dos próprios autores, os ambientes do Centro Histórico e da Avenida Litorânea. E por fim, para trabalhos futuros tem-se em mente realizar um plano de divulgação do Demo do jogo para coleta de feedback e também a ideia de que os níveis do jogo se estendam para outros lugares característicos da cultura de São Luís e ainda para outros estados, não só no Maranhão, dependendo, é claro, da aceitação do jogo por parte do público. 
+
+
+Agradecimentos
+Ao IFMA e ao Lab JOGA-AI, pelo apoio e financiamento da pesquisa.
+Referências
+LIMA, Alessandra. Corra Luís, Corra. Disponível em: <https://corraluis.netlify.com/> Acesso: 29.Set.2019
+AZOUBEL, Priscila et al. Game Design e HCI: A importância de estudos e pesquisa no processo de desenvolvimento de jogos digitais. Congresso Brasileiro de Pesquisa e Desenvolvimento em Design. Blucher Design Proceedings, n.2, v.9. Disponível em: <http://pdf.blucher.com.br.s3-sa-east-1.amazonaws.com/designproceedings/ped2016/0379.pdf>
+COSTA, Vinícius Dino Fonseca de Castro. A invenção do Centro Histórico de São Luís/MA : sentidos de um lugar de memória. 113f. Monografia - UnB, Brasília/DF, 2017.
+JUNIOR, Ademar de Souza Reis; NASSU, Bogdan T.; JONACK, Marco Antonio. Um estudo sobre os processos de desenvolvimento de Jogos eletrônicos(Games).  2002. Disponıvel em: http://www. ademar. org/texts/processodesenvgames.
+DA SILVEIRA, Guaracy Carlos. Jogos Digitais como Ferramenta Cultural: Uma proposta interdisciplinar. 2016. 
+INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL. Patrimônio Material - MA. Página IPHAN, 2014. Acesso em: 29 Oct. 2020, 12:57, Disponível em: <portal.iphan.gov.br/ma/pagina/detalhes/546.>
+________________
+[1] Estudante do Curso de Sistemas de Informação do IFMA do Campus Monte Castelo; E-mail: alessandralima1303@gmail.com.
+[2]  Estudante do Curso de Sistemas de Informação do IFMA do Campus Monte Castelo; E-mail: thayllonbarbosa01@gmail.com.
+[3] Professora Me. do Curso de Sistemas de Informação do IFMA do Campus Monte Castelo; E-mail: maurolopes@ifma.edu.br
+[4] Professora Drª. do Curso de Sistemas de Informação do IFMA do Campus Monte Castelo; E-mail: eveline@ifma.edu.br

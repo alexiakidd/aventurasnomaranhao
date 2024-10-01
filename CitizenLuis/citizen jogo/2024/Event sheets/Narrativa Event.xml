@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Narrativa Event</name>
+    <events>
+        <comment>Narrativa</comment>
+        <variable constant="0" name="StoryTextIndex" sid="162442800811726" static="0" type="number">0</variable>
+        <variable constant="0" name="StoryTextIndex1" sid="209867183919864" static="0" type="number">0</variable>
+        <variable constant="0" name="Story0TextIndexFull" sid="270428596185740" static="0" type="text">&quot;São Luís do Maranhão, uma cidade cheia de história e cultura. Mas agora, uma força misteriosa ameaça apagar tudo...&quot;</variable>
+        <variable constant="0" name="Story1TextIndexFull" sid="861232304114677" static="0" type="text">&quot;Esses casarões... Parece que estão perdendo sua essência. Algo está errado.&quot;</variable>
+        <event-group description="" sid="664384784157492" title="Narrativa2">
+            <sub-events>
+                <comment>Story0</comment>
+                <event-block sid="814002442307223">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="168580170295941" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="587038049596606" type="texto_cena0" />
+                        <condition id="-9" name="Is visible" sid="597061401841199" type="bg_cena0" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="183724523411584" type="texto_cena0">
+                            <param id="0" name="Text">(Mid(Story0TextIndexFull,0,StoryTextIndex))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="294485493245746" type="System">
+                            <param id="0" name="Variable">StoryTextIndex</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="652947917363233">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="835578710782663" type="System">
+                            <param id="0" name="Variable">StoryTextIndex</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Len(Story0TextIndexFull)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="275056340983110" type="texto_cena0" />
+                        <action id="-16" name="Wait" sid="435100793890372" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="696954858150725" type="System">
+                            <param id="0" name="Layout">Cena1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Story1</comment>
+                <event-block sid="821370449709302">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="710073383122905" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="287935751955066" type="texto_cena1" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="824838200799590" type="texto_cena1">
+                            <param id="0" name="Text">(Mid(Story1TextIndexFull,0,StoryTextIndex1))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="974646943803477" type="System">
+                            <param id="0" name="Variable">StoryTextIndex1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="988678537565564">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326275840674195" type="System">
+                            <param id="0" name="Variable">StoryTextIndex1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Len(Story1TextIndexFull)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="280144536314885" type="texto_cena1" />
+                        <action id="-16" name="Wait" sid="775315672778661" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="519250866257624" type="System">
+                            <param id="0" name="Layout">Cena2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Story2</comment>
+                <event-block sid="362166499160189">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="150018546725705" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">seta_seguinte</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="298236074283806" type="System">
+                            <param id="0" name="Layout">centro historico</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="235086827457521">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="300393846339582">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
