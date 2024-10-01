@@ -16,17 +16,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="5">Cena1</layout>
         <layout order="6">Cena2</layout>
         <layout order="7">Cena3</layout>
-        <layout order="8">cenario opaco</layout>
-        <layout order="9">centro historico</layout>
-        <layout order="10">cenario opaco2</layout>
+        <layout order="9">cenario opaco</layout>
+        <layout order="10">centro historico</layout>
+        <layout order="11">cenario opaco2</layout>
         <layout order="13">Creditos</layout>
         <layout order="14">Sobre</layout>
         <layout order="15">cenario lito</layout>
         <event-sheet order="1">Capa Event</event-sheet>
         <event-sheet order="3">Menu Event</event-sheet>
-        <event-sheet order="11">Event sheet</event-sheet>
-        <event-sheet active="1" order="12">Narrativa Event</event-sheet>
-        <event-sheet order="16">Creditos e Sobre Event</event-sheet>
+        <event-sheet order="12">Event sheet</event-sheet>
+        <event-sheet active="1" order="8">Narrativa Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -3,7 +3,7 @@
     <name>Aventuras no Maranhão</name>
     <description></description>
     <version>1.0.0.0</version>
-    <author></author>
+    <author>Alessandra Lima</author>
     <author-email></author-email>
     <author-website>http://www.aventurasnoma.com</author-website>
     <app-id>aventurasnoma.com</app-id>
@@ -51,7 +51,7 @@
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Construct 2 splash</prop>
-        <prop name="Orientations">Any</prop>
+        <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
@@ -352,7 +352,7 @@
         </object-type>
         <object-type name="bglitoranea" sid="197325383849156">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Litorânea\litoranea cenario.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\cenario imagens\Ativo 1.png" />
         </object-type>
         <object-type name="TiledBackground9" sid="254623720953366">
             <plugin id="TiledBg" />
