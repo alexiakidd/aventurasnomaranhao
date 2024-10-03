@@ -12,7 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Capa</layout>
         <layout order="2">Menu</layout>
-        <layout order="4">Cena0</layout>
+        <layout active="1" order="4">Cena0</layout>
         <layout order="5">Cena1</layout>
         <layout order="6">Cena2</layout>
         <layout order="7">Cena3</layout>
@@ -25,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">Capa Event</event-sheet>
         <event-sheet order="3">Menu Event</event-sheet>
         <event-sheet order="12">Event sheet</event-sheet>
-        <event-sheet active="1" order="8">Narrativa Event</event-sheet>
+        <event-sheet order="8">Narrativa Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -74,5 +74,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/sairpromenu/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/vilao_narrativa/" />
+        <folder expanded="1" path="animation-folder/Sprite20/" />
+        <folder expanded="1" path="animation-folder/perg_narrativa/" />
     </folders-expanded>
 </c2uistate>

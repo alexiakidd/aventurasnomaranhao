@@ -3,6 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu Event</name>
     <events>
+        <event-block sid="956417005397074">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="372811606512150" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="227619541693895" type="System" />
+            </actions>
+        </event-block>
         <event-group description="" sid="341351925654812" title="BotoesMenu">
             <sub-events>
                 <comment>Jogar Button</comment>

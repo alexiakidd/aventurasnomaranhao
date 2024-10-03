@@ -11,13 +11,13 @@
         <variable constant="0" name="TextoIndexLuiz3" sid="674815228926932" static="0" type="number">0</variable>
         <variable constant="0" name="TextoNarrado1" sid="270428596185740" static="0" type="text">&quot;São Luís do Maranhão, uma cidade cheia de história e cultura. Mas agora, uma força misteriosa ameaça apagar tudo...&quot;</variable>
         <variable constant="0" name="TextoLuiz1" sid="861232304114677" static="0" type="text">Sempre amei caminhar por aqui... Cada casarão conta uma história. Mas ultimamente, algo mudou. É como se as memórias estivessem desaparecendo... e eu não sei por quê.</variable>
-        <variable constant="0" name="TextoLuiz2" sid="235312309903689" static="0" type="text">Percebo que a cidade está diferente, mais apagada. Será se isso é aquela coisa chamada Esquecimento? A força misteriosa que apaga o passado das pessoas e dos lugares, trazendo a negligência que ameaça nosso patrimônio? Não posso deixar isso acontecer aqui...</variable>
+        <variable constant="0" name="TextoLuiz2" sid="235312309903689" static="0" type="text">A cidade parece mais apagada, como se estivesse perdendo suas memórias. Será que é o tal Esquecimento de que já ouvi falar? Aquela força misteriosa que apaga o passado das pessoas e dos lugares, trazendo o descaso que ameaça tudo o que temos? Não posso deixar isso acontecer aqui...</variable>
         <variable constant="0" name="TextoNarrado2" sid="607037075133226" static="0" type="text">Pelo visto o Esquecimento está agindo nas sombras, silenciosamente apagando as histórias e a essência de São Luís. Luís se preocupa e vê que ele precisa descobrir uma maneira de impedir.</variable>
-        <variable constant="0" name="TextoLuiz3" sid="740304083838255" static="0" type="text">Essas moedas... Eu me lembro de ouvir que elas guardam memórias, fragmentos de histórias que não devem ser esquecidas. Se eu puder recolhê-las, talvez consiga salvar a cidade antes que o Esquecimento apague tudo.</variable>
+        <variable constant="0" name="TextoLuiz3" sid="740304083838255" static="0" type="text">Essas pergaminhos... Eu me lembro de ouvir que elas guardam memórias, fragmentos de histórias que não devem ser esquecidas. Se eu puder recolhê-los, talvez consiga salvar a cidade antes que o Esquecimento apague tudo.</variable>
         <variable comment="1=true / 0=false" constant="0" name="FimNarrativa" sid="315776160254475" static="0" type="number">0</variable>
         <event-group description="" sid="664384784157492" title="Narrativa2">
             <sub-events>
-                <comment>Cena 0</comment>
+                <comment>Cena 0 - Narracao</comment>
                 <event-block sid="814002442307223">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="168580170295941" type="System">
@@ -75,7 +75,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Cena 1</comment>
+                <comment>Cena 1 - Luiz</comment>
                 <event-block sid="821370449709302">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="710073383122905" type="System">
@@ -124,6 +124,13 @@
                         </action>
                         <action id="0" name="Set text" sid="792393803937638" type="texto_cena1">
                             <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="413656388115784" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="919104785478086" type="vilao_narrativa" />
+                        <action id="-15" name="Set visible" sid="613617280079867" type="vilao_narrativa">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -182,7 +189,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Cena 2</comment>
+                <comment>Cena 2 - Narracao</comment>
                 <event-block sid="196212186111140">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="350589185178639" type="System">
@@ -243,7 +250,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Cena 3</comment>
+                <comment>Cena 3 - Luiz</comment>
                 <event-block sid="359443691091087">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="283385705113049" type="texto_cena1" />
@@ -252,6 +259,27 @@
                         <action id="-10" name="Set value" sid="331147264208404" type="texto_cena1">
                             <param id="0" name="Instance variable">textoLuiz</param>
                             <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121086974012230">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="103097154574108" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="657878651011511" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="854748164049468" type="perg_narrativa" />
+                        <action id="-15" name="Set visible" sid="102819607561766" type="perg_narrativa">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="765051499797766" type="perg_narrativa">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -306,21 +334,21 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="362166499160189">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="150018546725705" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">seta_seguinte</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="298236074283806" type="System">
-                            <param id="0" name="Layout">centro historico</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="190662914505663">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="587032538791462" type="System">
+                    <param id="0" name="Variable">numDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="298236074283806" type="System">
+                    <param id="0" name="Layout">centro historico</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

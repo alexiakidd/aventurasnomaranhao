@@ -768,6 +768,65 @@
         <object-type name="Touch" sid="187092619334301">
             <plugin id="Touch" />
         </object-type>
+        <object-type name="vilao_narrativa" sid="311302652326495">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="438146103204793">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490289811410658" speed="5">
+                    <frame duration="1" hotspotX="0.502075" hotspotY="0.500548" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\vilaocomperg.png">
+                        <collision-poly>
+                            <point x="0.952632" y="0.499452" />
+                            <point x="0.947368" y="0.989047" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142105" y="0.970427" />
+                            <point x="0.0473684" y="0.499452" />
+                            <point x="0.215789" y="0.0449069" />
+                            <point x="0.5" y="0" />
+                            <point x="0.868421" y="0.0273823" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="769973557863523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245084516511048" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="perg_narrativa" sid="712264039951022">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="661021226541752">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="765105628306219">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765727481123555" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\perg_narracao.png">
+                        <collision-poly>
+                            <point x="0.291193" y="0.357143" />
+                            <point x="0.5" y="0.162021" />
+                            <point x="0.792614" y="0.254355" />
+                            <point x="0.809659" y="0.5" />
+                            <point x="0.700284" y="0.632404" />
+                            <point x="0.5" y="0.837979" />
+                            <point x="0.205966" y="0.747387" />
+                            <point x="0.180398" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
