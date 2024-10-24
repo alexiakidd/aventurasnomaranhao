@@ -2,7 +2,7 @@
 <c2layout>
     <name>cenario opaco</name>
     <sid>707593519476074</sid>
-    <event-sheet>Event sheet</event-sheet>
+    <event-sheet>JogoEvent</event-sheet>
     <size>
         <width>1566</width>
         <height>864</height>

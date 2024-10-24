@@ -10,22 +10,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Capa</layout>
-        <layout order="2">Menu</layout>
-        <layout active="1" order="4">Cena0</layout>
-        <layout order="5">Cena1</layout>
-        <layout order="6">Cena2</layout>
-        <layout order="7">Cena3</layout>
-        <layout order="9">cenario opaco</layout>
-        <layout order="10">centro historico</layout>
-        <layout order="11">cenario opaco2</layout>
-        <layout order="13">Creditos</layout>
-        <layout order="14">Sobre</layout>
-        <layout order="15">cenario lito</layout>
-        <event-sheet order="1">Capa Event</event-sheet>
-        <event-sheet order="3">Menu Event</event-sheet>
-        <event-sheet order="12">Event sheet</event-sheet>
-        <event-sheet order="8">Narrativa Event</event-sheet>
+        <layout order="14">Capa</layout>
+        <layout order="1">Menu</layout>
+        <layout order="3">Cena0</layout>
+        <layout order="4">Cena1</layout>
+        <layout order="5">Cena2</layout>
+        <layout order="7">cenario opaco</layout>
+        <layout order="8">centro historico</layout>
+        <layout order="10">cenario opaco2</layout>
+        <layout order="12">Creditos</layout>
+        <layout order="13">Sobre</layout>
+        <layout order="9">cenario lito</layout>
+        <event-sheet order="0">Capa Event</event-sheet>
+        <event-sheet active="1" order="2">Menu Event</event-sheet>
+        <event-sheet order="6">Narrativa Event</event-sheet>
+        <event-sheet order="11">JogoEvent</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,14 +45,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/player/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/hud_tempo/" />
-        <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/pergcoin/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/Magnet/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/hud_perg/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
         <folder expanded="1" path="animation-folder/Sprite10/" />
-        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/perg2/" />
         <folder expanded="1" path="animation-folder/Sprite12/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
         <folder expanded="1" path="animation-folder/Sprite14/" />
@@ -66,16 +65,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/perg/" />
-        <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/hud_magnet/" />
         <folder expanded="1" path="animation-folder/Sprite18/" />
         <folder expanded="1" path="animation-folder/seta_seguinte/" />
         <folder expanded="1" path="animation-folder/btn_voltar/" />
         <folder expanded="1" path="animation-folder/creditos_button/" />
         <folder expanded="1" path="animation-folder/sairpromenu/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/spritehudtempo/" />
         <folder expanded="1" path="animation-folder/vilao_narrativa/" />
         <folder expanded="1" path="animation-folder/Sprite20/" />
         <folder expanded="1" path="animation-folder/perg_narrativa/" />
+        <folder expanded="1" path="animation-folder/shadowcounter/" />
     </folders-expanded>
 </c2uistate>

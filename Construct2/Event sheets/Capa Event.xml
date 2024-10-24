@@ -12,7 +12,7 @@
                 <action id="0" name="Play" sid="746181558431523" type="Audio">
                     <param id="0" name="Audio file">Sao Luis Dream</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">100</param>
+                    <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;themesong&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="448024740698259" type="System">

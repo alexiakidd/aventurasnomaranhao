@@ -162,31 +162,27 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="coin" sid="897670109204674">
+        <object-type name="pergcoin" sid="897670109204674">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Is_Magnet" sid="191847972148354" type="boolean" />
-            </instance-variables>
             <behaviors>
                 <behavior-type name="LineOfSight" sid="611111765420778">
                     <behavior id="LOS" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="884213544606858" speed="0">
-                    <frame duration="0" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\moeda ouro.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="884213544606858" speed="0">
+                    <frame duration="0" hotspotX="0.653333" hotspotY="0.502222" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\pergcoin.png">
                         <collision-poly>
-                            <point x="0.164706" y="0.122807" />
-                            <point x="0.494118" y="0.00877193" />
-                            <point x="0.835294" y="0.122807" />
-                            <point x="0.988235" y="0.5" />
-                            <point x="0.905882" y="0.929825" />
-                            <point x="0.494118" y="1" />
-                            <point x="0.129412" y="0.903509" />
-                            <point x="0.0117647" y="0.5" />
+                            <point x="0.0684745" y="0.12616" />
+                            <point x="0.633904" y="0.0131384" />
+                            <point x="1" y="0.12616" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.926004" />
+                            <point x="0.633904" y="0.995556" />
+                            <point x="0.0078931" y="0.899922" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="0" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\moeda bronze.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -229,18 +225,27 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ContadorText" sid="702847010978753">
+        <object-type name="ContadorTempoText" sid="702847010978753">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite7" sid="421735785907676">
+        <object-type name="hud_perg" sid="421735785907676">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537261769983288" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502674" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\barra moedas.png" />
+                    <frame duration="1" hotspotX="0.501139" hotspotY="0.505319" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\hud_perg.png">
+                        <collision-poly>
+                            <point x="0.0022779" y="0.00531915" />
+                            <point x="0.498861" y="0.00531915" />
+                            <point x="0.981777" y="0.0425532" />
+                            <point x="1" y="1" />
+                            <point x="0.498861" y="1" />
+                            <point x="0.0159453" y="0.962766" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ContadorMoedaText" sid="942466279435623">
+        <object-type name="ContadorPergaminhoText" sid="942466279435623">
             <plugin id="Text" />
         </object-type>
         <object-type name="TiledBackground4" sid="120027495910680">
@@ -287,7 +292,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite11" sid="475048123071829">
+        <object-type name="perg2" sid="475048123071829">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="759173867852565">
@@ -296,7 +301,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810673285826518" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\pergaminho.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501742" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\perg_narracao.png">
+                        <collision-poly>
+                            <point x="0.291193" y="0.357143" />
+                            <point x="0.5" y="0.162021" />
+                            <point x="0.792614" y="0.254355" />
+                            <point x="0.809659" y="0.5" />
+                            <point x="0.700284" y="0.632404" />
+                            <point x="0.5" y="0.837979" />
+                            <point x="0.205966" y="0.747387" />
+                            <point x="0.180398" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -352,7 +368,7 @@
         </object-type>
         <object-type name="bglitoranea" sid="197325383849156">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\cenario imagens\Ativo 1.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Litorânea\litoranea cenario.png" />
         </object-type>
         <object-type name="TiledBackground9" sid="254623720953366">
             <plugin id="TiledBg" />
@@ -456,8 +472,8 @@
         <object-type name="moeda2" sid="130163407943240">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="215190724562752" speed="0">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\moeda ouro.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="215190724562752" speed="0">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504065" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\pergcoin.png">
                         <collision-poly>
                             <point x="0.164706" y="0.122807" />
                             <point x="0.494118" y="0.00877193" />
@@ -469,7 +485,6 @@
                             <point x="0.0117647" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="0" hotspotX="0.505882" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\prata.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -537,7 +552,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580085029988050" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\cenario imagens\pergaminho.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501742" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\perg_narracao.png">
                         <collision-poly>
                             <point x="0.0838926" y="0.112108" />
                             <point x="0.5" y="0" />
@@ -552,7 +567,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite17" sid="101145885254689">
+        <object-type name="hud_magnet" sid="101145885254689">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457172257522633" speed="5">
@@ -742,7 +757,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite19" sid="986910799318646">
+        <object-type name="spritehudtempo" sid="986910799318646">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651162446515729" speed="5">
@@ -827,6 +842,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="regressive_counter" sid="820832133156343">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="regressive_counter_var" sid="405164302958422" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="shadowcounter" sid="658658604717381">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122521434775736" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -845,7 +874,7 @@
         <layout>cenario opaco2.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet.xml</event-sheet>
+        <event-sheet>JogoEvent.xml</event-sheet>
         <event-sheet>Menu Event.xml</event-sheet>
         <event-sheet>Capa Event.xml</event-sheet>
         <event-sheet>Narrativa Event.xml</event-sheet>
@@ -877,9 +906,17 @@
     <sounds-folder>
         <file name="fx_teclado.ogg" />
         <file name="cena0- lily.ogg" />
+        <file name="Luiz_nar_1_otto.ogg" />
+        <file name="luiz_nar_2_otto.ogg" />
+        <file name="luiz_nar_3_otto.ogg" />
+        <file name="nar_nar_2_lily.ogg" />
+        <file name="magic-sparkle-190030.ogg" />
+        <file name="nar_nar_3_lily.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Sao Luis Dream.ogg" />
+        <file name="Journey to Save São Luís - Litoranea.ogg" />
+        <file name="Save the city Sao Luis from Forgetfulness and negletion. - Centro.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

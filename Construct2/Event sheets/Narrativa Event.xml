@@ -13,10 +13,22 @@
         <variable constant="0" name="TextoLuiz1" sid="861232304114677" static="0" type="text">Sempre amei caminhar por aqui... Cada casarão conta uma história. Mas ultimamente, algo mudou. É como se as memórias estivessem desaparecendo... e eu não sei por quê.</variable>
         <variable constant="0" name="TextoLuiz2" sid="235312309903689" static="0" type="text">A cidade parece mais apagada, como se estivesse perdendo suas memórias. Será que é o tal Esquecimento de que já ouvi falar? Aquela força misteriosa que apaga o passado das pessoas e dos lugares, trazendo o descaso que ameaça tudo o que temos? Não posso deixar isso acontecer aqui...</variable>
         <variable constant="0" name="TextoNarrado2" sid="607037075133226" static="0" type="text">Pelo visto o Esquecimento está agindo nas sombras, silenciosamente apagando as histórias e a essência de São Luís. Luís se preocupa e vê que ele precisa descobrir uma maneira de impedir.</variable>
-        <variable constant="0" name="TextoLuiz3" sid="740304083838255" static="0" type="text">Essas pergaminhos... Eu me lembro de ouvir que elas guardam memórias, fragmentos de histórias que não devem ser esquecidas. Se eu puder recolhê-los, talvez consiga salvar a cidade antes que o Esquecimento apague tudo.</variable>
+        <variable constant="0" name="TextoLuiz3" sid="740304083838255" static="0" type="text">Esses pergaminhos... Eu me lembro de ouvir que eles guardam memórias, fragmentos de histórias que não devem ser esquecidas. Se eu puder recolhê-los, talvez consiga salvar a cidade antes que o Esquecimento apague tudo.</variable>
+        <variable constant="0" name="TextoNarrado3" sid="357308458571115" static="0" type="text">Luís precisa resgatar as memórias de São Luís antes que o Esquecimento apague tudo. Ajude-o a coletar os pergaminhos e restaurar a história da cidade.</variable>
         <variable comment="1=true / 0=false" constant="0" name="FimNarrativa" sid="315776160254475" static="0" type="number">0</variable>
         <event-group description="" sid="664384784157492" title="Narrativa2">
             <sub-events>
+                <event-block sid="408790260787070">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="608065242966844" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set volume" sid="201301903245518" type="Audio">
+                            <param id="0" name="Tag">&quot;themesong&quot;</param>
+                            <param id="1" name="dB">-20</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Cena 0 - Narracao</comment>
                 <event-block sid="814002442307223">
                     <conditions>
@@ -76,10 +88,28 @@
                     </actions>
                 </event-block>
                 <comment>Cena 1 - Luiz</comment>
+                <event-block sid="147049670895470">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="503829341829270" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="808990903781830" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="834353108204899" type="Audio">
+                            <param id="0" name="Audio file">Luiz_nar_1_otto</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;luiz_diag_1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="821370449709302">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="710073383122905" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.07</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="130773238103399" type="System">
                             <param id="0" name="Variable">numDialogo</param>
@@ -134,10 +164,28 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="655453004252627">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="646927556565496" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="335733544171759" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="851324748499096" type="Audio">
+                            <param id="0" name="Audio file">luiz_nar_2_otto</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">100</param>
+                            <param id="1" name="Tag (optional)">&quot;luiz_diag_2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="990300853441464">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="413259398892798" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.08</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="448239411402687" type="System">
                             <param id="0" name="Variable">numDialogo</param>
@@ -190,10 +238,28 @@
                     </actions>
                 </event-block>
                 <comment>Cena 2 - Narracao</comment>
+                <event-block sid="850967320596624">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="854408838508253" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="830814844394338" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="644166951551491" type="Audio">
+                            <param id="0" name="Audio file">nar_nar_2_lily</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;nar_diag_2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="196212186111140">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="350589185178639" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.07</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="769811708930234" type="texto_cena0" />
                         <condition id="-14" name="Compare variable" sid="270782581885789" type="System">
@@ -251,14 +317,39 @@
                     </actions>
                 </event-block>
                 <comment>Cena 3 - Luiz</comment>
-                <event-block sid="359443691091087">
+                <event-block sid="779848020856555">
                     <conditions>
-                        <condition id="-9" name="Is visible" sid="283385705113049" type="texto_cena1" />
+                        <condition id="-14" name="Compare variable" sid="213054554483377" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="680100472948812" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="331147264208404" type="texto_cena1">
-                            <param id="0" name="Instance variable">textoLuiz</param>
-                            <param id="1" name="Value">3</param>
+                        <action id="0" name="Play" sid="483369871055407" type="Audio">
+                            <param id="0" name="Audio file">luiz_nar_3_otto</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;luiz_diag_3&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="359443691091087">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="862278124543946" type="System">
+                            <param id="0" name="Variable">numDialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="775518594393015" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="442703663059700" type="Audio">
+                            <param id="0" name="Audio file">magic-sparkle-190030</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">100</param>
+                            <param id="1" name="Tag (optional)">&quot;perg_sparkle&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -286,7 +377,7 @@
                 <event-block sid="736020252006576">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="926590294917741" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
+                            <param id="0" name="Interval (seconds)">0.065</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="435569768788593" type="System">
                             <param id="0" name="Variable">numDialogo</param>
@@ -332,20 +423,88 @@
                         <action id="0" name="Set text" sid="768074660377786" type="texto_cena1">
                             <param id="0" name="Text">&quot;&quot;</param>
                         </action>
+                        <action id="-2" name="Go to layout" sid="761264957285191" type="System">
+                            <param id="0" name="Layout">Cena2</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="190662914505663">
+        <comment>Cena 5 - Narracao Final Centro</comment>
+        <event-block sid="413902750439078">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="587032538791462" type="System">
+                <condition id="-14" name="Compare variable" sid="712761732055720" type="System">
+                    <param id="0" name="Variable">numDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="390100244638100" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="563902179981035" type="Audio">
+                    <param id="0" name="Audio file">nar_nar_3_lily</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;nar_diag_3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="175503447211987">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="968216161405378" type="System">
+                    <param id="0" name="Interval (seconds)">0.07</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="329367595407205" type="texto_cena0" />
+                <condition id="-14" name="Compare variable" sid="235437616303533" type="System">
                     <param id="0" name="Variable">numDialogo</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="298236074283806" type="System">
+                <action id="0" name="Set text" sid="467319492588284" type="texto_cena0">
+                    <param id="0" name="Text">(Mid(TextoNarrado3,0,TextoIndexNarrador))</param>
+                </action>
+                <action id="-10" name="Add to" sid="388526361772155" type="System">
+                    <param id="0" name="Variable">TextoIndexNarrador</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534137372504521">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="870857632277336" type="System">
+                    <param id="0" name="Variable">TextoIndexNarrador</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Len(TextoNarrado3)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="509331559422977" type="System">
+                    <param id="0" name="Variable">numDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="740312796499809" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="997829640393092" type="texto_cena0" />
+                <action id="-9" name="Set value" sid="326830537210160" type="System">
+                    <param id="0" name="Variable">numDialogo</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-10" name="Set value" sid="433056047982229" type="texto_cena1">
+                    <param id="0" name="Instance variable">textoLuiz</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="283104231994477" type="System">
+                    <param id="0" name="Variable">TextoIndexNarrador</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="587584360353594" type="texto_cena0">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="760674569468843" type="System">
                     <param id="0" name="Layout">centro historico</param>
                 </action>
             </actions>

@@ -30,7 +30,7 @@
                         <action id="0" name="Play" sid="637349625790549" type="Audio">
                             <param id="0" name="Audio file">cena0- lily</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">100</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
@@ -69,5 +69,20 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="629813579185538">
+            <conditions>
+                <condition id="5" inverted="1" name="Is tag playing" sid="882276326482982" type="Audio">
+                    <param id="0" name="Tag">&quot;themesong&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="376811085973412" type="Audio">
+                    <param id="0" name="Audio file">Sao Luis Dream</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;themesong&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
