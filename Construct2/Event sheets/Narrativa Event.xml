@@ -25,7 +25,7 @@
                     <actions>
                         <action id="3" name="Set volume" sid="201301903245518" type="Audio">
                             <param id="0" name="Tag">&quot;themesong&quot;</param>
-                            <param id="1" name="dB">-20</param>
+                            <param id="1" name="dB">-15</param>
                         </action>
                     </actions>
                 </event-block>

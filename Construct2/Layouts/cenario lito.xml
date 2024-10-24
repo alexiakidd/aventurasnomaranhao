@@ -1213,6 +1213,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="spritehudtempo" uid="18">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>59.988342285</x>
+                        <y>69.157478333</y>
+                        <z>0</z>
+                        <width>34.17440033</width>
+                        <height>45.882297516</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.503448248</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

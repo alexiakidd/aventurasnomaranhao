@@ -48,6 +48,7 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="146547654694068" type="Audio" />
                 <action id="0" name="Play" sid="472773456485072" type="Audio">
                     <param id="0" name="Audio file">Save the city Sao Luis from Forgetfulness and negletion. - Centro</param>
                     <param id="2" name="Loop">1</param>
