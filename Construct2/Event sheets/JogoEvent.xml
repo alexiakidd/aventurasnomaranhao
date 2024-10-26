@@ -3,162 +3,202 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>JogoEvent</name>
     <events>
+        <variable comment="0 = false / 1 = true" constant="0" name="isLevelHistoricInfo" sid="681095773302670" static="0" type="number">0</variable>
         <variable comment="0=false/1=true" constant="0" name="IsMagnet" sid="365718732231586" static="0" type="number">0</variable>
         <variable comment="0=false/1=true" constant="0" name="hasGameStarted" sid="995779827530014" static="0" type="number">0</variable>
         <variable comment="centro / lito" constant="0" name="level" sid="537410779562984" static="0" type="text">centro</variable>
         <variable constant="0" name="cenario" sid="278492196448108" static="0" type="number">0</variable>
         <variable constant="0" name="contadortime_magnet" sid="524356275786853" static="0" type="number">5</variable>
         <variable constant="0" name="contadorPergaminho" sid="726467169021781" static="0" type="number">0</variable>
-        <variable constant="0" name="contadorTempo" sid="790904533244122" static="0" type="number">15</variable>
+        <variable constant="0" name="contadorTempo" sid="790904533244122" static="0" type="number">45</variable>
         <comment>Go to menu</comment>
-        <event-block sid="220058625364612">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="378672976544292" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">sairpromenu</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="111974258011547" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-                <action id="-21" name="Reset global variables" sid="643116534401486" type="System" />
-                <action id="6" name="Stop" sid="951879720865612" type="Audio">
-                    <param id="0" name="Tag">&quot;centro_song&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="112879676804736" type="Audio">
-                    <param id="0" name="Tag">&quot;lito_song&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="805787303768180" type="Audio">
-                    <param id="0" name="Audio file">Sao Luis Dream</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="415267096554689">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="818903390756089" type="System" />
-                <condition id="-14" name="Compare variable" sid="343983743191958" type="System">
-                    <param id="0" name="Variable">level</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;centro&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="33" name="Stop all" sid="146547654694068" type="Audio" />
-                <action id="0" name="Play" sid="472773456485072" type="Audio">
-                    <param id="0" name="Audio file">Save the city Sao Luis from Forgetfulness and negletion. - Centro</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;centro_song&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="438278294714061" type="System">
-                    <param id="0" name="Variable">contadorPergaminho</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="794393449282357" type="System">
-                    <param id="0" name="Variable">contadorTempo</param>
-                    <param id="1" name="Value">15</param>
-                </action>
-                <action id="0" name="Set text" sid="286977628548858" type="ContadorTempoText">
-                    <param id="0" name="Text">contadorTempo</param>
-                </action>
-                <action id="0" name="Set text" sid="934378598271005" type="ContadorPergaminhoText">
-                    <param id="0" name="Text">contadorPergaminho</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="796180068694943">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="361775819751884" type="System" />
-                <condition id="-14" name="Compare variable" sid="907213933919619" type="System">
-                    <param id="0" name="Variable">level</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;lito&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="932001235142234" type="Audio">
-                    <param id="0" name="Audio file">Journey to Save São Luís - Litoranea</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;lito_song&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="640557631659090">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="646931717343198" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="309226524726267" type="System">
-                    <param id="0" name="Variable">hasGameStarted</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="774720341503630" type="System">
-                    <param id="0" name="Seconds">0.6</param>
-                </action>
-                <action id="-15" name="Set visible" sid="916449042923428" type="regressive_counter">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="303406451863740" type="regressive_counter">
-                    <param id="0" name="Instance variable">regressive_counter_var</param>
-                    <param id="1" name="Value">&quot;3&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="756345692192256" type="regressive_counter">
-                    <param id="0" name="Text">&quot;3&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="608323971652644" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="3" name="Set font size" sid="728668572184893" type="regressive_counter">
-                    <param id="0" name="Size (pt)">72</param>
-                </action>
-                <action id="-10" name="Set value" sid="908441310555360" type="regressive_counter">
-                    <param id="0" name="Instance variable">regressive_counter_var</param>
-                    <param id="1" name="Value">&quot;2&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="997885381422848" type="regressive_counter">
-                    <param id="0" name="Text">&quot;2&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="118368497884317" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="-10" name="Set value" sid="372889524475210" type="regressive_counter">
-                    <param id="0" name="Instance variable">regressive_counter_var</param>
-                    <param id="1" name="Value">&quot;1&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="436194477245265" type="regressive_counter">
-                    <param id="0" name="Text">&quot;1&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="666055147471775" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="-10" name="Set value" sid="535230535364000" type="regressive_counter">
-                    <param id="0" name="Instance variable">regressive_counter_var</param>
-                    <param id="1" name="Value">&quot;VAI!&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="618188240380036" type="regressive_counter">
-                    <param id="0" name="Text">&quot;VAI!&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="897397261478748" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="-15" name="Set visible" sid="890741912213807" type="regressive_counter">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="683789546973940" type="shadowcounter">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="997067547578325" type="System">
-                    <param id="0" name="Variable">hasGameStarted</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="206809662705227" title="Fluxo do jogo">
+            <sub-events>
+                <event-block sid="220058625364612">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="378672976544292" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">sairpromenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="111974258011547" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="643116534401486" type="System" />
+                        <action id="6" name="Stop" sid="951879720865612" type="Audio">
+                            <param id="0" name="Tag">&quot;centro_song&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="112879676804736" type="Audio">
+                            <param id="0" name="Tag">&quot;lito_song&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="805787303768180" type="Audio">
+                            <param id="0" name="Audio file">Sao Luis Dream</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="415267096554689">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="818903390756089" type="System" />
+                        <condition id="-14" name="Compare variable" sid="343983743191958" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;centro&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="102489299560933" type="System">
+                            <param id="0" name="Variable">isLevelHistoricInfo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="146547654694068" type="Audio" />
+                        <action id="0" name="Play" sid="472773456485072" type="Audio">
+                            <param id="0" name="Audio file">Save the city Sao Luis from Forgetfulness and negletion. - Centro</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;centro_song&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="438278294714061" type="System">
+                            <param id="0" name="Variable">contadorPergaminho</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="794393449282357" type="System">
+                            <param id="0" name="Variable">contadorTempo</param>
+                            <param id="1" name="Value">45</param>
+                        </action>
+                        <action id="0" name="Set text" sid="286977628548858" type="ContadorTempoText">
+                            <param id="0" name="Text">contadorTempo</param>
+                        </action>
+                        <action id="0" name="Set text" sid="934378598271005" type="ContadorPergaminhoText">
+                            <param id="0" name="Text">contadorPergaminho</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="796180068694943">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="361775819751884" type="System" />
+                        <condition id="-14" name="Compare variable" sid="907213933919619" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lito&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="222384788647970" type="Audio" />
+                        <action id="0" name="Play" sid="932001235142234" type="Audio">
+                            <param id="0" name="Audio file">Journey to Save São Luís - Litoranea</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;lito_song&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="723931151484704" type="System">
+                            <param id="0" name="Variable">contadorTempo</param>
+                            <param id="1" name="Value">45</param>
+                        </action>
+                        <action id="0" name="Set text" sid="495776993919081" type="ContadorTempoText">
+                            <param id="0" name="Text">contadorTempo</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="640557631659090">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="646931717343198" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="774720341503630" type="System">
+                            <param id="0" name="Seconds">0.6</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="916449042923428" type="regressive_counter">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="303406451863740" type="regressive_counter">
+                            <param id="0" name="Instance variable">regressive_counter_var</param>
+                            <param id="1" name="Value">&quot;3&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="756345692192256" type="regressive_counter">
+                            <param id="0" name="Text">&quot;3&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="608323971652644" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="908441310555360" type="regressive_counter">
+                            <param id="0" name="Instance variable">regressive_counter_var</param>
+                            <param id="1" name="Value">&quot;2&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="997885381422848" type="regressive_counter">
+                            <param id="0" name="Text">&quot;2&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="118368497884317" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="372889524475210" type="regressive_counter">
+                            <param id="0" name="Instance variable">regressive_counter_var</param>
+                            <param id="1" name="Value">&quot;1&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="436194477245265" type="regressive_counter">
+                            <param id="0" name="Text">&quot;1&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="666055147471775" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="535230535364000" type="regressive_counter">
+                            <param id="0" name="Instance variable">regressive_counter_var</param>
+                            <param id="1" name="Value">&quot;VAI!&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="618188240380036" type="regressive_counter">
+                            <param id="0" name="Text">&quot;VAI!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="897397261478748" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="890741912213807" type="regressive_counter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="683789546973940" type="shadowcounter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="997067547578325" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="523491485757542" title="Contador_Tempo">
+            <sub-events>
+                <event-block sid="755464437039040">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="525593674711841" type="System">
+                            <param id="0" name="Variable">contadorTempo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-9" name="Set value" sid="951221035470997" type="System">
+                            <param id="0" name="Variable">contadorTempo</param>
+                            <param id="1" name="Value">60</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="287049141758299" type="ContadorTempoText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="898961371463995" type="ContadorTempoText">
+                            <param id="0" name="Text">contadorTempo</param>
+                        </action>
+                        <action id="0" name="Set text" sid="741115884684036" type="ContadorPergaminhoText">
+                            <param id="0" name="Text">contadorPergaminho</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="360823389620857" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="300816954424329" title="Contador_Pergaminho">
             <sub-events>
                 <event-block sid="484797486048413">
@@ -203,35 +243,6 @@
                         <action id="0" name="Set text" sid="260971537092742" type="ContadorTempoText">
                             <param id="0" name="Text">contadorTempo</param>
                         </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="523491485757542" title="Contador_Tempo">
-            <sub-events>
-                <event-block sid="755464437039040">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="525593674711841" type="System">
-                            <param id="0" name="Variable">contadorTempo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-9" name="Set value" sid="951221035470997" type="System">
-                            <param id="0" name="Variable">contadorTempo</param>
-                            <param id="1" name="Value">60</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="287049141758299" type="ContadorTempoText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="898961371463995" type="ContadorTempoText">
-                            <param id="0" name="Text">contadorTempo</param>
-                        </action>
-                        <action id="0" name="Set text" sid="741115884684036" type="ContadorPergaminhoText">
-                            <param id="0" name="Text">contadorPergaminho</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="360823389620857" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -343,6 +354,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="674207712893447" type="Magnet" />
+                        <action id="-9" name="Set value" sid="477833600371047" type="System">
+                            <param id="0" name="Variable">IsMagnet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="501588934310650" type="ContadorMagnetTexto">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -361,21 +376,21 @@
                         <action id="-15" name="Set visible" sid="212319962691331" type="ContadorMagnetTexto">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="597420367496870" type="System">
+                            <param id="0" name="Variable">IsMagnet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
-                </event-block>
-                <event-block sid="455093193425479">
-                    <conditions>
-                        <condition id="-9" name="Is visible" sid="449146314021654" type="hud_magnet" />
-                    </conditions>
-                    <actions />
                 </event-block>
                 <event-block sid="639387994750033">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="186040359660392" type="Magnet">
-                            <param id="0" name="Object">player</param>
-                        </condition>
                         <condition id="-6" name="Every X seconds" sid="370779277160929" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="208031726361947" type="System">
+                            <param id="0" name="Variable">IsMagnet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -398,19 +413,10 @@
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">0</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="676385877811253" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="159580488031357">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="442561060242642" type="System">
-                            <param id="0" name="Variable">contadortime_magnet</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="-14" name="Compare variable" sid="737297336605508" type="System">
+                            <param id="0" name="Variable">IsMagnet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -424,11 +430,6 @@
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="618497972735839" type="pergcoin">
                             <param id="0" name="Object">player</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="998086349137079" type="System">
-                            <param id="0" name="Variable">contadortime_magnet</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -471,10 +472,19 @@
                 <condition id="0" name="On collision with another object" sid="926253856486033" type="perg2">
                     <param id="0" name="Object">player</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="570555072289913" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;centro&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="321312753813590" type="System">
                     <param id="0" name="Layout">cenario opaco</param>
+                </action>
+                <action id="-9" name="Set value" sid="660977856605702" type="System">
+                    <param id="0" name="Variable">isLevelHistoricInfo</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -483,16 +493,17 @@
                 <condition id="6" name="On object clicked" sid="181389745082778" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite13</param>
+                    <param id="2" name="Object clicked">btn_nextLevel</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="955015837832915" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;centro&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="188662628401487" type="System">
                     <param id="0" name="Layout">cenario lito</param>
-                </action>
-                <action disabled="1" id="-9" name="Set value" sid="686889998476463" type="System">
-                    <param id="0" name="Variable">contadorTempo</param>
-                    <param id="1" name="Value">60</param>
                 </action>
                 <action id="0" name="Set text" sid="764058558470207" type="ContadorTempoText">
                     <param id="0" name="Text">contadorTempo</param>
@@ -502,6 +513,41 @@
                     <param id="0" name="Variable">level</param>
                     <param id="1" name="Value">&quot;lito&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="204320363880209" type="System">
+                    <param id="0" name="Variable">isLevelHistoricInfo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="133881408338521">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="173174732504731" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btn_nextLevel</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="835856657132112" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;lito&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="499914013446810" type="System">
+                    <param id="0" name="Layout">cenario opaco2</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="974028182683480" type="System">
+                    <param id="0" name="Variable">contadorTempo</param>
+                    <param id="1" name="Value">60</param>
+                </action>
+                <action id="0" name="Set text" sid="630747073622354" type="ContadorTempoText">
+                    <param id="0" name="Text">contadorTempo</param>
+                </action>
+                <action id="33" name="Stop all" sid="986623305296867" type="Audio" />
+                <action id="-9" name="Set value" sid="179857986356480" type="System">
+                    <param id="0" name="Variable">isLevelHistoricInfo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="985228272315921">
@@ -509,19 +555,25 @@
                 <condition id="6" name="On object clicked" sid="159955805807005" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite16</param>
+                    <param id="2" name="Object clicked">btn_menu</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="453228762121649" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
+                <action id="33" name="Stop all" sid="573261866200585" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="336461840376565">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="375964300638949" type="perg">
                     <param id="0" name="Object">player</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="618685780648693" type="System">
+                    <param id="0" name="Variable">cenario</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;lito&quot;</param>
                 </condition>
             </conditions>
             <actions>

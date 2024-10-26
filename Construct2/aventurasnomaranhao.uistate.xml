@@ -11,10 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Capa</layout>
-        <layout order="2">Layout 1</layout>
-        <layout order="3">centro historico</layout>
-        <layout active="1" order="4">cenario lito</layout>
-        <event-sheet order="1">JogoEvent</event-sheet>
+        <layout order="1">Layout 1</layout>
+        <layout active="1" order="2">centro historico</layout>
+        <layout order="3">cenario lito</layout>
+        <layout order="4">cenario opaco2</layout>
+        <layout order="6">cenario opaco</layout>
+        <event-sheet order="0">JogoEvent</event-sheet>
+        <event-sheet order="5">Narrativa Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,8 +30,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/calçada/" />
@@ -44,12 +47,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite10/" />
         <folder expanded="1" path="animation-folder/perg2/" />
         <folder expanded="1" path="animation-folder/Sprite12/" />
-        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/btn_nextLevel/" />
         <folder expanded="1" path="animation-folder/Sprite14/" />
         <folder expanded="1" path="animation-folder/jogar_b/" />
         <folder expanded="1" path="animation-folder/sobre_button/" />
         <folder expanded="1" path="animation-folder/Sprite15/" />
-        <folder expanded="1" path="animation-folder/Sprite16/" />
+        <folder expanded="1" path="animation-folder/btn_menu/" />
         <folder expanded="1" path="animation-folder/moeda2/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />

@@ -4,7 +4,7 @@
     <description>Jogo educativo</description>
     <version>1.0.0.0</version>
     <author>Alessandra Lima</author>
-    <author-email></author-email>
+    <author-email>alessandralima1303@gmail.com</author-email>
     <author-website>http://www.aventurasnoma.com</author-website>
     <app-id>aventurasnoma.com</app-id>
     <unique-id>ywbdvif1ty0z</unique-id>
@@ -22,7 +22,6 @@
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
-        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -60,7 +59,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="TiledBackground" sid="118894481395934">
+        <object-type name="bg_ceuazul" sid="118894481395934">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\aless\OneDrive\Área de Trabalho\cenario imagens\bg1.png" />
         </object-type>
@@ -142,13 +141,8 @@
         </object-type>
         <object-type name="hud_tempo" sid="642428306548525">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Persist" sid="246633488647600">
-                    <behavior id="Persist" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733157258914961" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="733157258914961" speed="0">
                     <frame duration="1" hotspotX="0.501139" hotspotY="0.505319" original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Assets\hud_tempo\hud.png">
                         <collision-poly>
                             <point x="0" y="0" />
@@ -167,6 +161,9 @@
             <behaviors>
                 <behavior-type name="LineOfSight" sid="611111765420778">
                     <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="220458539240291">
+                    <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -316,7 +313,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground6" sid="304041228503726">
+        <object-type name="bg_cenario_opaco" sid="304041228503726">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\CENARIO OPACO.png" />
         </object-type>
@@ -339,7 +336,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite13" sid="513712111682274">
+        <object-type name="btn_nextLevel" sid="513712111682274">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="173538434884160">
@@ -370,7 +367,7 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Litorânea\litoranea cenario.png" />
         </object-type>
-        <object-type name="TiledBackground9" sid="254623720953366">
+        <object-type name="bg_ceuazul2" sid="254623720953366">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\praia.png" />
         </object-type>
@@ -435,7 +432,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="TiledBackground14" sid="821233702984594">
+        <object-type name="bg_cenario_opaco2" sid="821233702984594">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\litoranea cenario.png" />
         </object-type>
@@ -454,7 +451,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite16" sid="507610188597196">
+        <object-type name="btn_menu" sid="507610188597196">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248608645689165" speed="5">

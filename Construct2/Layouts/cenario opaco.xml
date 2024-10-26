@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="28">
+                <instance type="bg_ceuazul" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground6" uid="25">
+                <instance type="bg_cenario_opaco" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -58,10 +58,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-4573</x>
-                        <y>352</y>
+                        <y>351.798034668</y>
                         <z>0</z>
                         <width>6138</width>
-                        <height>513.596069336</height>
+                        <height>514</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -91,7 +91,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite13" uid="30">
+                <instance type="btn_nextLevel" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
