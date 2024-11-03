@@ -101,7 +101,7 @@
                         <action id="0" name="Play" sid="834353108204899" type="Audio">
                             <param id="0" name="Audio file">Luiz_nar_1_otto</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;luiz_diag_1&quot;</param>
                         </action>
                     </actions>
@@ -177,7 +177,7 @@
                         <action id="0" name="Play" sid="851324748499096" type="Audio">
                             <param id="0" name="Audio file">luiz_nar_2_otto</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">100</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;luiz_diag_2&quot;</param>
                         </action>
                     </actions>
@@ -251,7 +251,7 @@
                         <action id="0" name="Play" sid="644166951551491" type="Audio">
                             <param id="0" name="Audio file">nar_nar_2_lily</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;nar_diag_2&quot;</param>
                         </action>
                     </actions>
@@ -330,7 +330,7 @@
                         <action id="0" name="Play" sid="483369871055407" type="Audio">
                             <param id="0" name="Audio file">luiz_nar_3_otto</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;luiz_diag_3&quot;</param>
                         </action>
                     </actions>
@@ -444,7 +444,7 @@
                 <action id="0" name="Play" sid="563902179981035" type="Audio">
                     <param id="0" name="Audio file">nar_nar_3_lily</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;nar_diag_3&quot;</param>
                 </action>
             </actions>

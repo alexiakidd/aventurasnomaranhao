@@ -71,7 +71,7 @@
                 </instance>
                 <instance type="Sprite15" uid="67">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -80,7 +80,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>787</x>
-                        <y>415</y>
+                        <y>374</y>
                         <z>0</z>
                         <width>745</width>
                         <height>690</height>
@@ -93,6 +93,43 @@
                 </instance>
                 <instance type="btn_menu" uid="78">
                     <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>25</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1155</x>
+                        <y>711</y>
+                        <z>0</z>
+                        <width>123.342514038</width>
+                        <height>123.342514038</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50289017</hotspotX>
+                        <hotspotY>0.50289017</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="modal_win" uid="103">
+                    <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
@@ -101,14 +138,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1155</x>
-                        <y>752</y>
+                        <x>784</x>
+                        <y>378</y>
                         <z>0</z>
-                        <width>120.490661621</width>
-                        <height>120.490661621</height>
+                        <width>643</width>
+                        <height>644</height>
                         <depth>0</depth>
-                        <hotspotX>0.502958596</hotspotX>
-                        <hotspotY>0.502958596</hotspotY>
+                        <hotspotX>0.500777602</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_avancar" uid="104">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>788</x>
+                        <y>606</y>
+                        <z>0</z>
+                        <width>154.227554321</width>
+                        <height>88.505584717</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501650155</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

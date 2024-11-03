@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -65,7 +66,7 @@
         </object-type>
         <object-type name="casaroes" sid="620629662630180">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Centro\Ativo 14.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\casaroes.png" />
         </object-type>
         <object-type name="calçada" sid="484987605962736">
             <plugin id="Sprite" />
@@ -321,11 +322,11 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Sprite12" sid="397386448590905">
+        <object-type name="modal_cenarioopaco1" sid="397386448590905">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573910018120778" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\TEXTO.png">
+                    <frame duration="1" hotspotX="0.500671" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Centro\cenario opaco.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.998656" y="0.00144928" />
@@ -345,7 +346,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292334821380868" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\seta.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\ArrowProximoNivel.png">
                         <collision-poly>
                             <point x="0.133333" y="0.237113" />
                             <point x="0.5" y="0.237113" />
@@ -365,7 +366,7 @@
         </object-type>
         <object-type name="bglitoranea" sid="197325383849156">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Litorânea\litoranea cenario.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\litonovo.png" />
         </object-type>
         <object-type name="bg_ceuazul2" sid="254623720953366">
             <plugin id="TiledBg" />
@@ -440,7 +441,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746225659766061" speed="5">
-                    <frame duration="1" hotspotX="0.500671" hotspotY="0.5" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\TEXTO 2.png">
+                    <frame duration="1" hotspotX="0.500671" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Litorânea\cenario opaco 2.png">
                         <collision-poly>
                             <point x="0.00134228" y="0.00144928" />
                             <point x="0.998658" y="0.00144928" />
@@ -453,9 +454,14 @@
         </object-type>
         <object-type name="btn_menu" sid="507610188597196">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="188802993511576">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248608645689165" speed="5">
-                    <frame duration="1" hotspotX="0.502959" hotspotY="0.502959" original-source="C:\Users\aless\OneDrive\Área de Trabalho\citizen jogo\B MENU.png">
+                    <frame duration="1" hotspotX="0.50289" hotspotY="0.50289" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\ButtonMenu.png">
                         <collision-poly>
                             <point x="0.00591716" y="0.00591716" />
                             <point x="1" y="0" />
@@ -853,6 +859,139 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite7" sid="226338503026547">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446776182034866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\game over.png">
+                        <collision-poly>
+                            <point x="0.00931677" y="0.00931677" />
+                            <point x="0.990683" y="0.00931677" />
+                            <point x="0.990683" y="0.990683" />
+                            <point x="0.00931677" y="0.990683" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="329384828600168">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="jogar_de_novo" sid="686122830773557">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite11" sid="310108556328217">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471057913207182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="699286994974108">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="balao_vilao" sid="546844341457278">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810244390413652" speed="5">
+                    <frame duration="1" hotspotX="0.50133" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\balao_vilao1.png">
+                        <collision-poly>
+                            <point x="0.0888099" y="0.206612" />
+                            <point x="0.499112" y="0" />
+                            <point x="0.91119" y="0.206612" />
+                            <point x="0.998224" y="0.5" />
+                            <point x="0.898757" y="0.764463" />
+                            <point x="0.499112" y="0.954545" />
+                            <point x="0.101243" y="0.764463" />
+                            <point x="0.0017762" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="perg3" sid="785291785304757">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="955437630278306">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331962729587466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501742" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\Assets\perg_narracao.png">
+                        <collision-poly>
+                            <point x="0.291193" y="0.357143" />
+                            <point x="0.5" y="0.162021" />
+                            <point x="0.792614" y="0.254355" />
+                            <point x="0.809659" y="0.5" />
+                            <point x="0.700284" y="0.632404" />
+                            <point x="0.5" y="0.837979" />
+                            <point x="0.205966" y="0.747387" />
+                            <point x="0.180398" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balao_vilao2" sid="465157330156462">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838720681861910" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\balao_vilao2.png">
+                        <collision-poly>
+                            <point x="0.0864362" y="0.218121" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913564" y="0.218121" />
+                            <point x="0.99867" y="0.5" />
+                            <point x="0.912234" y="0.778524" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0864362" y="0.781879" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="542487918419991">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\winmodal.png" />
+        </object-type>
+        <object-type name="modal_win" sid="996383532942446">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633233299264629" speed="5">
+                    <frame duration="1" hotspotX="0.500778" hotspotY="0.5" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\winmodal.png">
+                        <collision-poly>
+                            <point x="0.00933126" y="0.00931677" />
+                            <point x="0.990669" y="0.00931677" />
+                            <point x="0.990669" y="0.990683" />
+                            <point x="0.00933126" y="0.990683" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_avancar" sid="864991662584060">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254744217317287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\btn_avancar.png">
+                        <collision-poly>
+                            <point x="0.136364" y="0.237624" />
+                            <point x="0.5" y="0.237624" />
+                            <point x="0.846591" y="0.267327" />
+                            <point x="1" y="0.49835" />
+                            <point x="0.846591" y="0.732673" />
+                            <point x="0.5" y="0.762376" />
+                            <point x="0.136364" y="0.762376" />
+                            <point x="0.00189394" y="0.49835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -909,6 +1048,9 @@
         <file name="nar_nar_2_lily.ogg" />
         <file name="magic-sparkle-190030.ogg" />
         <file name="nar_nar_3_lily.ogg" />
+        <file name="coletou_perg.ogg" />
+        <file name="paper-collect.ogg" />
+        <file name="magnetic_sound.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Sao Luis Dream.ogg" />

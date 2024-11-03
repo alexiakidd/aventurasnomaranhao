@@ -69,9 +69,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite12" uid="29">
+                <instance type="modal_cenarioopaco1" uid="29">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -80,12 +80,12 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>788</x>
-                        <y>425</y>
+                        <y>378</y>
                         <z>0</z>
-                        <width>727.895263672</width>
+                        <width>728.873596191</width>
                         <height>675.064147949</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.500671148</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -93,7 +93,7 @@
                 </instance>
                 <instance type="btn_nextLevel" uid="30">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -116,14 +116,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1139</x>
-                        <y>743</y>
+                        <x>1143</x>
+                        <y>712</y>
                         <z>0</z>
-                        <width>193.29548645</width>
-                        <height>108.693695068</height>
+                        <width>147.913070679</width>
+                        <height>84.88193512</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501650155</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="modal_win" uid="101">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>786</x>
+                        <y>376</y>
+                        <z>0</z>
+                        <width>643</width>
+                        <height>644</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500777602</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btn_avancar" uid="102">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>791</x>
+                        <y>612</y>
+                        <z>0</z>
+                        <width>154.227554321</width>
+                        <height>88.505584717</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501650155</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

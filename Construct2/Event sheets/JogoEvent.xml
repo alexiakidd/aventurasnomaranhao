@@ -4,6 +4,7 @@
     <name>JogoEvent</name>
     <events>
         <variable comment="0 = false / 1 = true" constant="0" name="isLevelHistoricInfo" sid="681095773302670" static="0" type="number">0</variable>
+        <variable comment="0 = false / 1 = true" constant="0" name="isLevelHistoricInfo2" sid="697447124770844" static="0" type="number">0</variable>
         <variable comment="0=false/1=true" constant="0" name="IsMagnet" sid="365718732231586" static="0" type="number">0</variable>
         <variable comment="0=false/1=true" constant="0" name="hasGameStarted" sid="995779827530014" static="0" type="number">0</variable>
         <variable comment="centro / lito" constant="0" name="level" sid="537410779562984" static="0" type="text">centro</variable>
@@ -60,7 +61,7 @@
                         <action id="0" name="Play" sid="472773456485072" type="Audio">
                             <param id="0" name="Audio file">Save the city Sao Luis from Forgetfulness and negletion. - Centro</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;centro_song&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="438278294714061" type="System">
@@ -87,13 +88,18 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;lito&quot;</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="928592177963139" type="System">
+                            <param id="0" name="Variable">isLevelHistoricInfo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="33" name="Stop all" sid="222384788647970" type="Audio" />
                         <action id="0" name="Play" sid="932001235142234" type="Audio">
                             <param id="0" name="Audio file">Journey to Save São Luís - Litoranea</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;lito_song&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="723931151484704" type="System">
@@ -110,6 +116,13 @@
                         <condition id="-2" name="On start of layout" sid="646931717343198" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="712705212681504" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="956038260874908" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
                         <action id="-16" name="Wait" sid="774720341503630" type="System">
                             <param id="0" name="Seconds">0.6</param>
                         </action>
@@ -181,12 +194,20 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action disabled="1" id="-9" name="Set value" sid="951221035470997" type="System">
-                            <param id="0" name="Variable">contadorTempo</param>
-                            <param id="1" name="Value">60</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="287049141758299" type="ContadorTempoText">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="386433001616612" type="System">
+                            <param id="0" name="Variable">contadorTempo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="764433452227710" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="413409355834808" type="Audio">
+                            <param id="0" name="Tag">&quot;centro_song&quot;</param>
+                            <param id="1" name="dB">-15</param>
                         </action>
                         <action id="0" name="Set text" sid="898961371463995" type="ContadorTempoText">
                             <param id="0" name="Text">contadorTempo</param>
@@ -194,6 +215,27 @@
                         <action id="0" name="Set text" sid="741115884684036" type="ContadorPergaminhoText">
                             <param id="0" name="Text">contadorPergaminho</param>
                         </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="277209666633725" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="130250968088042" type="Sprite7">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="502538525560323" type="jogar_de_novo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="448763222573630">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="247426001729684" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">jogar_de_novo</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="934190837233187" type="jogar_de_novo" />
+                    </conditions>
+                    <actions>
                         <action id="-26" name="Restart layout" sid="360823389620857" type="System" />
                     </actions>
                 </event-block>
@@ -257,7 +299,11 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="693116683594429" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="968834406148905">
                             <conditions>
@@ -353,7 +399,17 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="361068492343812" type="Audio">
+                            <param id="0" name="Audio file">magnetic_sound</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">100</param>
+                            <param id="1" name="Tag (optional)">&quot;magnetic_sound&quot;</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="674207712893447" type="Magnet" />
+                        <action id="-9" name="Set value" sid="341723583259415" type="System">
+                            <param id="0" name="Variable">contadortime_magnet</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
                         <action id="-9" name="Set value" sid="477833600371047" type="System">
                             <param id="0" name="Variable">IsMagnet</param>
                             <param id="1" name="Value">1</param>
@@ -375,6 +431,9 @@
                         </action>
                         <action id="-15" name="Set visible" sid="212319962691331" type="ContadorMagnetTexto">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="325740162916527" type="Audio">
+                            <param id="0" name="Tag">&quot;magnetic_sound&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="597420367496870" type="System">
                             <param id="0" name="Variable">IsMagnet</param>
@@ -441,6 +500,12 @@
                         <action id="0" name="Set text" sid="148118059659431" type="ContadorPergaminhoText">
                             <param id="0" name="Text">contadorPergaminho</param>
                         </action>
+                        <action id="0" name="Play" sid="726321618438537" type="Audio">
+                            <param id="0" name="Audio file">paper-collect</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;perg_collecy&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="993109723051213">
@@ -486,6 +551,12 @@
                     <param id="0" name="Variable">isLevelHistoricInfo</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Play" sid="214739700777237" type="Audio">
+                    <param id="0" name="Audio file">coletou_perg</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;coletou_perg&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="240065128699902">
@@ -500,6 +571,7 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">&quot;centro&quot;</param>
                 </condition>
+                <condition id="-9" name="Is visible" sid="504580292157449" type="btn_nextLevel" />
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="188662628401487" type="System">
@@ -519,34 +591,33 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="133881408338521">
+        <event-block sid="950156515458561">
             <conditions>
-                <condition id="6" name="On object clicked" sid="173174732504731" type="Mouse">
+                <condition id="6" name="On object clicked" sid="534704927031168" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">btn_nextLevel</param>
+                    <param id="2" name="Object clicked">btn_avancar</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="835856657132112" type="System">
-                    <param id="0" name="Variable">level</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;lito&quot;</param>
-                </condition>
+                <condition id="-9" name="Is visible" sid="418107687795293" type="btn_avancar" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="499914013446810" type="System">
-                    <param id="0" name="Layout">cenario opaco2</param>
+                <action id="-15" name="Set visible" sid="644893686667502" type="modal_win">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action disabled="1" id="-9" name="Set value" sid="974028182683480" type="System">
-                    <param id="0" name="Variable">contadorTempo</param>
-                    <param id="1" name="Value">60</param>
+                <action id="-15" name="Set visible" sid="420596530681664" type="btn_avancar">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="0" name="Set text" sid="630747073622354" type="ContadorTempoText">
-                    <param id="0" name="Text">contadorTempo</param>
+                <action id="-15" name="Set visible" sid="409675242814368" type="modal_cenarioopaco1">
+                    <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="33" name="Stop all" sid="986623305296867" type="Audio" />
-                <action id="-9" name="Set value" sid="179857986356480" type="System">
-                    <param id="0" name="Variable">isLevelHistoricInfo</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-15" name="Set visible" sid="621656025516964" type="btn_nextLevel">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="780249604038688" type="btn_menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="565139095043111" type="Sprite15">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
@@ -557,6 +628,7 @@
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">btn_menu</param>
                 </condition>
+                <condition id="-9" name="Is visible" sid="969081419225157" type="btn_menu" />
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="453228762121649" type="System">
@@ -565,20 +637,25 @@
                 <action id="33" name="Stop all" sid="573261866200585" type="Audio" />
             </actions>
         </event-block>
-        <event-block sid="336461840376565">
+        <event-block sid="865772975883368">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="375964300638949" type="perg">
-                    <param id="0" name="Object">player</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="618685780648693" type="System">
-                    <param id="0" name="Variable">cenario</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;lito&quot;</param>
+                <condition id="0" name="On collision with another object" sid="226923923892799" type="player">
+                    <param id="0" name="Object">perg3</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="335266117004646" type="System">
+                <action id="0" name="Play" sid="164828790107053" type="Audio">
+                    <param id="0" name="Audio file">coletou_perg</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;coletou_perg&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="359583453664781" type="System">
                     <param id="0" name="Layout">cenario opaco2</param>
+                </action>
+                <action id="-9" name="Set value" sid="847752020159272" type="System">
+                    <param id="0" name="Variable">isLevelHistoricInfo</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -590,14 +667,124 @@
                         <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="362455930682275" type="Sprite18">
                             <param id="0" name="Object">player</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="628779023403654" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="7" name="Set mirrored" sid="159187115018581" type="Sprite18">
+                            <param id="0" name="State">1</param>
+                        </action>
                         <action id="-1" name="Set X" sid="650687523192021" type="Sprite18">
-                            <param id="0" name="X">Self.X + 5</param>
+                            <param id="0" name="X">Self.X + 10</param>
                         </action>
                         <action id="4" name="Set animation" sid="898081949864206" type="Sprite18">
                             <param id="0" name="Animation">&quot;v_andando&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="985317104518183" type="balao_vilao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="802297271078340" type="balao_vilao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="143844386815558">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="686872908522992" type="Sprite18">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">1266</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="623397967942655" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="427051227178509" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;centro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="526920305709048" type="Sprite18">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="876892851627150" type="Sprite18">
+                            <param id="0" name="Animation">&quot;v_parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="185643884451145" type="balao_vilao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="986323541408961">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="518663948327702" type="Sprite18">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">1356</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="795158308908687" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;centro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="473123630769845" type="pergcoin">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="950179715075190">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="700714993017088" type="Sprite18">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">1460</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="287908011778655" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lito&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="844302143154953" type="pergcoin">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="604417977647192">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="266094599900837" type="Sprite18">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">1460</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="824339339394555" type="System">
+                            <param id="0" name="Variable">hasGameStarted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="452386515605034" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;lito&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="691846867236430" type="Sprite18">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="775145433648607" type="Sprite18">
+                            <param id="0" name="Animation">&quot;v_parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="666540124258726" type="balao_vilao2">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
