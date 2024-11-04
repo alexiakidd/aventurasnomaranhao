@@ -992,6 +992,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite12" sid="141351347453524">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788958752716179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_pular_narracao" sid="928138639869752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602147079243766" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\btn_pularnarra.png">
+                        <collision-poly>
+                            <point x="0.136364" y="0.237624" />
+                            <point x="0.5" y="0.237624" />
+                            <point x="0.844697" y="0.270627" />
+                            <point x="1" y="0.49835" />
+                            <point x="0.846591" y="0.732673" />
+                            <point x="0.5" y="0.762376" />
+                            <point x="0.136364" y="0.762376" />
+                            <point x="0.00189394" y="0.49835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1002,7 +1029,6 @@
         <layout>Cena0.xml</layout>
         <layout>Cena1.xml</layout>
         <layout>Cena2.xml</layout>
-        <layout>Cena3.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>centro historico.xml</layout>
         <layout>cenario opaco.xml</layout>

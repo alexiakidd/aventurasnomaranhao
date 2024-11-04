@@ -509,5 +509,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="392892986302459">
+            <conditions>
+                <condition id="17" name="On tap object" sid="279259569949127" type="Touch">
+                    <param id="0" name="Object">btn_pular_narracao</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="457137965297393" type="btn_pular_narracao" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="381831325384273" type="System">
+                    <param id="0" name="Layout">centro historico</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

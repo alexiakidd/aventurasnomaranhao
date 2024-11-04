@@ -10,13 +10,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Capa</layout>
+        <layout active="1" order="0">Capa</layout>
         <layout order="2">centro historico</layout>
         <layout order="3">cenario lito</layout>
         <layout order="6">cenario opaco2</layout>
         <layout order="4">cenario opaco</layout>
         <layout order="5">Menu</layout>
-        <event-sheet active="1" order="1">JogoEvent</event-sheet>
+        <layout order="8">Cena0</layout>
+        <layout order="10">Cena1</layout>
+        <layout order="11">Cena2</layout>
+        <layout order="12">Layout 1</layout>
+        <event-sheet order="1">JogoEvent</event-sheet>
+        <event-sheet order="7">Menu Event</event-sheet>
+        <event-sheet order="9">Narrativa Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -76,5 +82,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/balao_vilao2/" />
         <folder expanded="1" path="animation-folder/modal_win/" />
         <folder expanded="1" path="animation-folder/btn_avancar/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/btn_pular_narracao/" />
     </folders-expanded>
 </c2uistate>
