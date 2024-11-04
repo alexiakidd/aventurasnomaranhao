@@ -339,6 +339,9 @@
                                 <action id="7" name="Set mirrored" sid="260885493509451" type="player">
                                     <param id="0" name="State">0</param>
                                 </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="336568605357137" type="player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="395110417279732">
@@ -350,6 +353,21 @@
                             <actions>
                                 <action id="7" name="Set mirrored" sid="202389293974893" type="player">
                                     <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="997078090647766" type="player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="269174933222724">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="829963698872581" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="821439472659730" type="player">
+                                    <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
                         </event-block>

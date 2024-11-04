@@ -236,7 +236,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>698</x>
+                        <x>718</x>
                         <y>611</y>
                         <z>0</z>
                         <width>185.305999756</width>
@@ -1116,7 +1116,7 @@
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Enabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
+                                <jump-sustain>1</jump-sustain>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>

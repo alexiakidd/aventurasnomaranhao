@@ -683,7 +683,7 @@
         </object-type>
         <object-type name="bg_sobre" sid="674676133168000">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\Citizen Luis\citizen jogo\Designs Illustrator\Menu\menu sobre.png" />
+            <texture original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\2024\Designs Illustrator\menu sobre.png" />
         </object-type>
         <object-type name="btn_voltar" sid="126340202646032">
             <plugin id="Sprite" />
@@ -1014,6 +1014,25 @@
                             <point x="0.5" y="0.762376" />
                             <point x="0.136364" y="0.762376" />
                             <point x="0.00189394" y="0.49835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ima" sid="105262557888333">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534503590846991" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="C:\Users\alles\OneDrive\Área de Trabalho\aventurasnomaranhao\CitizenLuis\citizen jogo\cenario imagens\ima.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.0970464" />
+                            <point x="0.5" y="0.00421941" />
+                            <point x="0.847826" y="0.147679" />
+                            <point x="1" y="0.49789" />
+                            <point x="0.856522" y="0.860759" />
+                            <point x="0.5" y="0.995781" />
+                            <point x="0.0956522" y="0.907173" />
+                            <point x="0.778261" y="0.49789" />
                         </collision-poly>
                     </frame>
                 </animation>
